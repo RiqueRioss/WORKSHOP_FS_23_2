@@ -1,0 +1,66 @@
+Henrique Rios da Costa Guedes - 29131481
+
+Teste de Funcionalidade
+  Home:
+    Problema 1 (Urgente): Essa página possui um botão secreto invisível, ao usar o comando de selecionar todo o texto da página, é possível ver logo ao lado da frase do Seu Barriga o botão “reset”, ao clicar nele, todo os dados que o usuário escreveu são retirados e substituídos por outros.
+  Login:
+    Problema 1: Sem limite de tentativas, ver Teste de Segurança.
+  Criar Conta:
+    Problema 1: Possível criar um nome com apenas 1 caractere.
+    Problema 2: Possível criar senha com pouquíssimos caracteres, tornando fácil de adivinhar (Recomendável 8 para cima).
+    Problema 3: Possível usar @ não existente para email.
+    (Conta Exemplo - Email: 10@g.com - Senha: 10)
+    Recomendação: Pedir a Idade e o CPF do usuário, a idade serve para evitar menores de idade e o CPF serve para evitar que usuários criem múltiplas contas.
+  Contas:
+    Problema 1: Limite não aparente de caracteres. Ao criar / mudar o nome da conta para uma grande quantidade de caracteres, aparece o erro "[object Object]”.
+    Problema 2: Com duas guias abertas, é possível editar uma conta que já foi deletada, aparecendo uma mensagem de erro vazia.
+  Criar Movimentação:
+    Problema 1: Possível criar data de pagamento fora do alcance do Resumo Mensal.
+    Problema 2: O valor inserido não reconhece o padrão decimal brasileiro, mas sim o inglês.
+  Resumo Mensal:
+    Problema 1: Impossível mudar a situação do pagamento.
+    Problema 2: Opção de busca por ano abrange um período muito pequeno, possível ter pagamentos impossíveis de ver.
+  Sair:
+    Funciona corretamente.
+
+Teste de Interface
+  Computador: O site apresenta boa compatibilidade com os navegadores Google Chrome e Microsoft Edge.
+  Mobile (Moto e20): O design não se adapta para a tela do celular, ele usa a mesma formatação do computador, tornando o texto e os botões muito pequenos.
+  Home:
+    Problema 1: O texto “Seu Barriga. Nunca mais esqueça de pagar o aluguel.” está desalinhado com os textos acima, encostando no canto da tela.
+  Contas:
+    Problema 1: A opção “listar” não mostra o saldo de cada conta.
+    Problema 2: O nome “conta” confunde o usuário, já que quando temos uma opção “conta”, ela nos leva a informações da conta do usuário.
+    Problema 3: Na opção “listar”, o botão de editar e deletar estão próximos demais como também muito distantes do nome das contas.
+    Recomendação 1: Colocar os botões de editar e deletar contas no lado esquerdo, dessa forma eles sempre estarão próximos ao nome da conta.
+  Geral:
+    Problema 1: O botão “Seu Barriga” leva para o “home”, são dois botões com o exato mesmo destino.
+    Recomendação 1: Remover a opção de clicar no texto “Seu Barriga”, fazê-lo ser apenas uma marca estética.
+    Recomendação 2: Alterar o nome do botão “home” para “saldos”, isso tornará seu conteúdo mais claro, já que é nele que se vê os saldos de cada conta.
+    Recomendação 3: Pela simplicidade do site, é possível juntar a aba “home” com “contas” e “Criar Movimentação” com “Resumo Mensal”. As duas abas apresentam o mesmo conteúdo, então não faz sentido tê-las separadas.
+
+Teste de Desempenho
+  (sou incapaz de fazer testes de estresse)
+
+Teste de Usabilidade
+  O site possui péssimo port para mobile, preciso me aproximar bastante do celular para enxergar, pessoas com hipermetropia terão dificuldade ao usar o site com celulares. Eu posso dar zoom com os dedos, mas é completamente imprático.
+  Resumo Mensal:
+    Problema 1: Quando o pagamento pendente está vencido, o texto pendente apenas fica em “vermelho”, algo muito fácil de se passar despercebido.
+    Problema 2: Não é possível ver todos os pagamentos ao mesmo tempo caso eles não estejam no mesmo mês.
+    Recomendação 1: Colocar uma descrição adicional que fala se a data do pagamento venceu.
+    Recomendação 2: Criar um botão que muda o texto “Pendente” para “Pago” ou algo que remeta ao sucesso da operação.
+  Criar Conta:
+    Recomendação 1: Colocar opção de criar conta com google, facebook etc.
+    Recomendação 2: Para criar a conta, o usuário precisa verificar um código enviado para o email.
+  Geral:
+    Problema 1: O botão “Sair” não possui função clara à primeira vista.
+    Problema 2: O botão de “Sair” está na mesma área de acessar outras abas, é possível clicar acidentalmente.
+    Problema 3: O botão de sair da conta não possui uma segunda etapa para confirmar que o usuário realmente quer sair.
+
+Teste de Segurança
+  Contas:
+    Problema 1 (Urgente): O site possui nenhum tipo de verificação de usuário.
+    Problema 2: O site não possui limite de tentativas, bots conseguem abusar disso.
+    Recomendação 1: O usuário precisa confirmar o login com código no email. Para ser mais seguro, o usuário precisa confirmar o login com chave de acesso no celular.
+  Geral:
+    Recomendação 1: Colocar desconexão por inatividade.
