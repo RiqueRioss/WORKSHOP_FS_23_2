@@ -1,0 +1,23 @@
+Henrique Rios da Costa Guedes - 29131481
+
+Alguns problemas encontrados
+
+Problema 1: Possível criar nome com apenas 1 caractere.
+
+Problema 2: Possível criar senha com apenas 1 caractere.
+
+Problema 3: Possível usar @ inexistente para email.
+
+Problema 4: O site não tem verificação de duas etapas.
+
+Problema 5: Na aba Criar Movimentação, é possível inserir qualquer data fora do limite da aba de Resumo Mensal.
+
+Problema 6: Na aba Resumo Mensal, o limite de data impede que você veja pagamentos fora do período selecionado.
+
+Problema 7: O design do site não se adapta para celulares, ele usa a formatação do computador.
+
+Problema 8: Com duas guias abertas, é possível editar uma conta deletada, dando uma mensagem de erro vazia.
+
+Problema 9: Contas não possuem limites de caracteres, ao colocar uma grande número aparece a mensagem de erro "[object Object]”
+
+Problema 10: É impossível mudar a situação do pagamento.
